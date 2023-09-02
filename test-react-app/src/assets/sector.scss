@@ -1,0 +1,111 @@
+.Sector {
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 500px;
+
+    @media (max-width : 1920px) {
+        max-height: 300px;
+    }
+    @media (max-width : 768px) {
+        max-height: 100%;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        position: relative;
+        top: 12px;
+    }
+
+    &__Select {
+        width: 400px;
+        padding: 5px;
+    }
+}
+
+.SectorInput {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    padding: 0% 5px;
+    margin-bottom: 3px;
+
+    .SectorInputField {
+        height: 13px;
+        width: 13px;
+        cursor: pointer;
+    }
+
+    .sectorButton {
+        display: flex;
+        align-items: center;
+        width: 223px;
+        justify-content: space-between;
+        border: 1px solid #e7e7e7;
+        padding: 3px 10px;
+        border-radius: 4px;
+        margin-left: 10px;
+
+
+        @media (max-width : 640px ) {
+        width: 210px;
+
+        }
+
+        @media (max-width : 520px ) {
+            width: 160px;
+    
+            }
+
+
+        &__text {
+            font-size: 14px;
+            margin: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+        }
+    }
+}
+
+
+
+.Collapsible__contentInner {
+    // background-color: #fffbfb;
+    // border: 1px solid #ede9e9;
+    border-radius: 4px;
+    width: 370px;
+    margin-left: 40px;
+    padding: 5px;
+    margin-top: 4px;
+    max-width: 600px;
+
+
+    @media (max-width : 640px ) {
+        width: 320px;
+
+        }
+
+        @media (max-width : 520px ) {
+            width: 290px;
+    
+            }
+
+
+    .sectorItems {
+        padding: 3px;
+
+        input {
+            cursor: pointer;
+        }
+        &__name {
+            margin-left: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+
+}
+
