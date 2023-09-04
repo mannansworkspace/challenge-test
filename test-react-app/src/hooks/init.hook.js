@@ -33,6 +33,7 @@ const useInit = () => {
             setNotification(notificationMessages.SECTOR_NOT_FOUND)
             return
         }
+        setNotification({ ...defaultNotification })
         setSectors(sectors)
     }
 
