@@ -32,6 +32,6 @@ export const notificationMessages = {
     INVALID_SECTORS: { message: "Please select atleast 1 Sector.", theme: messageThemes.ERROR },
     SIGN_TERMS: { message: "Please sign terms.", theme: messageThemes.ERROR },
     USER_UPDATED: { message: "User has been successfully updated.", theme: messageThemes.INFO },
-    SECTOR_NOT_FOUND: { message: "Please reload, sectors not found", theme: messageThemes.ERROR }
-
+    SECTOR_NOT_FOUND: { message: "Please reload, sectors not found", theme: messageThemes.ERROR },
+    FETCHING_SECTORS: { message: "Please wait, We are fetching sectors!", theme: messageThemes.INFO }
 }

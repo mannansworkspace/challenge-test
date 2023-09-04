@@ -19,7 +19,7 @@ const useInit = () => {
 
     const [sectors, setSectors] = useState([]) // sectors 
     const [user, setUser] = useState({ ...defaultUser }) // user
-    const [notification, setNotification] = useState({ ...defaultNotification })
+    const [notification, setNotification] = useState(notificationMessages.FETCHING_SECTORS)
 
     const clearNotification = () => {
         setNotification(defaultNotification)
