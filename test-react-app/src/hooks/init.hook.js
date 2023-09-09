@@ -104,7 +104,7 @@ const useInit = () => {
 
     const handleValidation = () => {
         let notification;
-        if (!user[userKeys.NAME]) {
+        if (!user[userKeys.NAME].trim()) {
             notification = notificationMessages.INVALID_NAME
         } else if (!user[userKeys.SECTORS].length) {
             notification = notificationMessages.INVALID_SECTORS
